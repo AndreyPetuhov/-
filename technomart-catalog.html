@@ -21,7 +21,7 @@
                 <label for="search">Поиск:</label>
             </form>
             <a class="bookmarks" href="#">Закладки:0</a>
-            <a class="card-сurrent" href="#">Корзина:0</a>
+            <a class="card-сurrent" href="#">Корзина:10</a>
             <a class="checkout" href="#">Оформить заказ</a>
         </section>
 
@@ -40,6 +40,8 @@
             <div class="user">
                 <p class="user-name">
                     <a href="#">Равшвн Джамшутович</a>
+                    <a href="#"><span class="visually-hidden">Выход</span></a>
+                    <!--Здесь может списком зделать?-->
                 </p>
                 <ul class="user-data">
                     <li><a href="#">Мои заказы</a></li>
@@ -76,36 +78,47 @@
 
         <h2>ПЕРФОРАТОРЫ</h2>
 
-        <section class="manufacturer-filters">
-            <h3>Производители:</h3>
-            <form action="#" method="post">
+        <h3 class="filter-title">ФИЛЬТР</h3>
 
-                <input type="checkbox" name="bosch" id="bosch" checked>
-                <label for="bosch">BOSCH</label>
-                <input type="checkbox" name="interskol" id="interskol">
-                <label for="interskol">ИНТЕРСКОЛ</label>
-                <input type="checkbox" name="makita" id="makita" checked>
-                <label for="makita">MAKITA</label>
-                <input type="checkbox" name="dewalt" id="dewalt">
-                <label for="dewalt">DEWALT</label>
-                <input type="checkbox" name="hitachi" id="hitachi">
-                <label for="hitachi">HITACHI</label>
-            </form>
+        <form class="filter" method="get" action="#">
 
-        </section>
+            <div class="price-filter">
+                <h4 class="price-filter-title">ЦЕНА:</h4>
+                <input type="range" id="price-range" name="price-range" min="0" max="3000" step="1">
+            </div>
+            <div class="price-filter-output">
+                <output name="output1"></output>
+                <output name="output2"></output>
+            </div>
+            <!--непонятно как этот фильтр делать-->
 
-        <section class="power-type">
-            <h3>Питание:</h3>
-            <form action="#" method="post">
-                <input type="radio" name="power-type" value="battery" id="battery" checked>
-                <label for="battery">АККУМУЛЯТОРНЫЕ</label>
-                <input type="radio" name="power-type" value="electrical" id="electrical">
-                <label for="electrical">СЕТЕВЫЕ</label>
-            </form>
-            <p>
-                <input type="button" value="ПОКАЗАТЬ">
-            </p>
-        </section>
+            <h4>ПРОИЗВОДИТЕЛИ:</h4>
+            <ul>
+                <li class="manufacturer-filters">
+                    <input type="checkbox" name="bosch" id="bosch" checked>
+                    <label for="bosch">BOSCH</label></li>
+                <li class="manufacturer-filters"><input type="checkbox" name="interskol" id="interskol">
+                    <label for="interskol">ИНТЕРСКОЛ</label></li>
+                <li class="manufacturer-filters"><input type="checkbox" name="makita" id="makita" checked>
+                    <label for="makita">MAKITA</label></li>
+                <li class="manufacturer-filters"><input type="checkbox" name="dewalt" id="dewalt">
+                    <label for="dewalt">DEWALT</label></li>
+                <li class="manufacturer-filters"><input type="checkbox" name="hitachi" id="hitachi">
+                    <label for="hitachi">HITACHI</label></li>
+            </ul>
+
+            <h4>ПИТАНИЕ:</h4>
+            <ul>
+                <li class="power-type"><input type="radio" name="power-type" value="battery" id="battery" checked>
+                    <label for="battery">АККУМУЛЯТОРНЫЕ</label></li>
+                <li class="power-type"><input type="radio" name="power-type" value="electrical" id="electrical">
+                    <label for="electrical">СЕТЕВЫЕ</label></li>
+            </ul>
+
+            <button type="submit" class="filter-button button">ПОКАЗАТЬ</button>
+        </form>
+
+
         <!--Здесь будет блок сортировки-->
 
         <section class="catalog">
@@ -216,7 +229,7 @@
                 <li class="catalog-item">
                     <h3>Перфаратор BOSCH <br> BFG 6000</h3>
                     <p class="catalog-item-image">
-                        <img src="img/Perforator_6000.jp" width="218" height="170" alt="Перфаратор BOSCH BFG 6000">
+                        <img src="img/Perforator_6000.jpg" width="218" height="170" alt="Перфаратор BOSCH BFG 6000">
                     </p>
                     <p class="catalog-item-old-price">
                         30500 P.
@@ -253,9 +266,11 @@
         </ul>
         <section class="about-perforator">
             <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий
+                в
                 кирпиче, бетоне и камне.
-                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
+                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять
+                функции
                 дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном
                 устройстве будут совмещены отбойный молоток и ударная дрель.</P>
         </section>
@@ -269,11 +284,12 @@
                 <a class="footer-logo" href="technomart-index.html"><img src="img/logo-text.png" width="140" height="24"
                         alt="Логотип магазина техномарт">
                 </a>
-                <p class="footer-address">
+                <P class="footer-address">
                     г.Санкт-Петербург, ул.Конюшенная, д.19/8 <br>
                     +7 (812) 555-05-55
                 </P>
             </div>
+
 
             <nav class="footer-navigation">
                 <ul class="footer-site-navigation">
@@ -300,10 +316,11 @@
             </p>
 
             <div class="footer-social">
+                <h4 class="visually-hidden">Техномарт в соцсетях</h4>
                 <ul>
-                    <li><a class="social-button" href="">В контакте</a></li>
-                    <li><a class="social-button" href="">Фейсбук</a></li>
-                    <li><a class="social-button" href="">Инстаграмм</a></li>
+                    <li><a class="social-button" href=""><span class="visually-hidden">В контакте</span></a></li>
+                    <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li><a class="social-button" href=""><span class="visually-hidden">Инстаграмм</span></a></li>
                 </ul>
             </div>
 
@@ -320,5 +337,17 @@
 
     </footer>
 </body>
+
+<!--Модальное окно карзины-->
+<section class="modal-cart">
+    <h2>
+        Товар добавлен в корзину!
+    </h2>
+    <button class="button checkout" type="button">ОФОРМИТЬ ЗАКАЗ</button>
+    <button class="button continue-shopping" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+    <button class="modal-cart-close" type="button">
+        Закрыть
+    </button>
+</section>
 
 </html>

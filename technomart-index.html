@@ -12,15 +12,12 @@
   <header class="main-header">
 
     <section class="main-header-top">
-      <a class="main-header-logo"><img src="img/logo-text.png" width="110" height="18"
-          alt="Логотип магазина техномарт">
+      <a class="main-header-logo"><img src="img/logo-text.png" width="110" height="18" alt="Логотип магазина техномарт">
       </a>
       <form action="#" method="post">
         <input type="search" name="search" id="search">
         <label for="search">Поиск:</label>
       </form>
-
-
 
       <a class="bookmarks" href="#">Закладки:0</a>
       <a class="card" href="#">Корзина:0</a>
@@ -99,7 +96,8 @@
         заехав в наш офис:
       </p>
       <p>
-        <a class="сontacts-map" href="#"><img src="img/map-small.jpg" width="300" height="158" alt="Карта"> </a>
+        <a class="сontacts-map" href="#"><img src="img/map-small.jpg" width="300" height="158"
+            alt="Офис компании по адресу ул. Большая Конюшенная, 19"> </a>
         <a class="contacts-feedback" href="#">
           Заблудились? Напишите нам!
         </a>
@@ -147,10 +145,11 @@
       </p>
 
       <div class="footer-social">
+        <h4 class="visually-hidden">Техномарт в соцсетях</h4>
         <ul>
-          <li><a class="social-button" href="">В контакте</a></li>
-          <li><a class="social-button" href="">Фейсбук</a></li>
-          <li><a class="social-button" href="">Инстаграмм</a></li>
+          <li><a class="social-button" href=""><span class="visually-hidden">В контакте</span></a></li>
+          <li><a class="social-button" href=""><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href=""><span class="visually-hidden">Инстаграмм</span></a></li>
         </ul>
       </div>
 
@@ -167,5 +166,51 @@
 
   </footer>
 </body>
+
+<!--Модальное окно "- Заблудились? Напишите нам!-->
+<!--Низ формы (где кнопка) оформлен серым цветом. Тут нужно добавить две обёртки для верха и для низа?-->
+
+<section class="modal-feedback">
+  <h2 class="visually-hidden">Форма обратной связи</h2>
+  <form class="modal-feedback-form" action="#" method="post">
+    <p class="modal-feedback-item">
+      <label>
+        Ваше имя: <br>
+        <input type="text" name="name" value="" placeholder="Имя Фамилия">
+      </label>
+    </p>
+    <p class="modal-feedback-item">
+      <label>
+        Ваше e-mail: <br>
+        <input type="text" name="e-mail" value="" placeholder="email@example.com">
+      </label>
+    </p>
+    <p class="modal-feedback-item">
+      <label>
+        Текст письма: <br>
+        <input type="text" name="text" value="" placeholder="В свободной форме">
+      </label>
+    </p>
+    <button class="button" type="submit">Отправить</button>
+  </form>
+  <button class="feedback-form-close" type="button">
+    Закрыть
+  </button>
+
+</section>
+
+<!--Попап карты-->
+<section class="modal-map-popup">
+  <h2 class="visually-hidden">
+    Как до нас добраться
+  </h2>
+  <p>
+    <img src="img/map-big.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная, 19">
+  </p>
+  <button class="modal-map-popup-close" type="button">
+    Закрыть
+  </button>
+    <!--Закрывающие крестики во всех окнах вроде одинаковые. Стоит ли им давать разные?-->
+</section>
 
 </html>
