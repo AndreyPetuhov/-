@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 400;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header-top {
+    background-color: #293449;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.main-header-top a {
+    color: #ffffff;
+}
+
+.main-header-logo {
+    background-color: #ee3643;
+}
+
+.checkout {
+    background-color: #63a63e;
+}
+
+
+/* 1.При наведении и клике меняется цвет фона ссылки ?
+*/
+
+.main-header-bottom {
+    background-color: #f4f7f9;
+}
+
+.main-header-bottom h1 {
+    color: #ee3643;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+}
+
+.main-header-contacts .phone {
+    color: #ee3643;
+    font-size: 21px;
+    line-height: 21px;
+    /*  шрифт почемуто не похож*/
+    border: 3px solid #ffffff;
+}
+
+.main-header-contacts .address {
+    color: #32425c;
+    font-size: 14px;
+    line-height: 24px;
+    /*  шрифт почемуто не похож*/
+}
+
+.login-authentication,
+.site-navigation,
+.transport_company,
+.footer-site-navigation,
+.footer-product,
+.footer-social ul {
+    list-style: none;
+}
+
+.login-authentication a {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.main-navigation {
+    background-color: #32425c;
+    font-size: 17px;
+    line-height: 17px;
+}
+
+.site-navigation a {
+    color: #ffffff;
+}
+
+.about-company h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.about-company p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.about-company-link,
+.contacts-feedback {
+    color: #ffffff;
+    background-color: #ee3643;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.footer-top {
+    background-color: #32425c;
+    color: #f3f7f9;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-logo {
+    background-color: #ee3643;
+}
+
+.footer-site-navigation a {
+    color: #f3f7f9;
+}
+
+.footer-product a {
+    color: #ffd180;
+}
+
+.footer-site-navigation a:hover,
+.footer-product a:hover {
+    text-decoration: underline;
+}
+
+.footer-site-navigation a:active,
+.footer-product a:active {
+    color: rgba(243, 247, 249, 0.5);
+}
+
+.footer-bottom {
+    background-color: #293449;
+}
