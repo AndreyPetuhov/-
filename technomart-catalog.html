@@ -67,7 +67,6 @@
 
     <main class="container">
 
-        <!--Здесь будет надпись фильтр и фильтр по цене (с ползунком)-->
 
         <ul class="breadcrumbs">
             <li><a href="technomart-index.html">Домой </a></li>
@@ -81,7 +80,9 @@
         <h3 class="filter-title">ФИЛЬТР</h3>
 
         <form class="filter" method="get" action="#">
-
+            <fieldset>
+                <legend>Цена</legend>
+                <!--фильтр с ползунком
             <div class="price-filter">
                 <h4 class="price-filter-title">ЦЕНА:</h4>
                 <input type="range" id="price-range" name="price-range" min="0" max="3000" step="1">
@@ -90,30 +91,33 @@
                 <output name="output1"></output>
                 <output name="output2"></output>
             </div>
-            <!--непонятно как этот фильтр делать-->
-
-            <h4>ПРОИЗВОДИТЕЛИ:</h4>
-            <ul>
-                <li class="manufacturer-filters">
-                    <input type="checkbox" name="bosch" id="bosch" checked>
-                    <label for="bosch">BOSCH</label></li>
-                <li class="manufacturer-filters"><input type="checkbox" name="interskol" id="interskol">
-                    <label for="interskol">ИНТЕРСКОЛ</label></li>
-                <li class="manufacturer-filters"><input type="checkbox" name="makita" id="makita" checked>
-                    <label for="makita">MAKITA</label></li>
-                <li class="manufacturer-filters"><input type="checkbox" name="dewalt" id="dewalt">
-                    <label for="dewalt">DEWALT</label></li>
-                <li class="manufacturer-filters"><input type="checkbox" name="hitachi" id="hitachi">
-                    <label for="hitachi">HITACHI</label></li>
-            </ul>
-
-            <h4>ПИТАНИЕ:</h4>
-            <ul>
-                <li class="power-type"><input type="radio" name="power-type" value="battery" id="battery" checked>
-                    <label for="battery">АККУМУЛЯТОРНЫЕ</label></li>
-                <li class="power-type"><input type="radio" name="power-type" value="electrical" id="electrical">
-                    <label for="electrical">СЕТЕВЫЕ</label></li>
-            </ul>
+           -->
+            </fieldset>
+            <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                    <li class="manufacturer-filters">
+                        <input type="checkbox" name="bosch" id="bosch" checked>
+                        <label for="bosch">BOSCH</label></li>
+                    <li class="manufacturer-filters"><input type="checkbox" name="interskol" id="interskol">
+                        <label for="interskol">ИНТЕРСКОЛ</label></li>
+                    <li class="manufacturer-filters"><input type="checkbox" name="makita" id="makita" checked>
+                        <label for="makita">MAKITA</label></li>
+                    <li class="manufacturer-filters"><input type="checkbox" name="dewalt" id="dewalt">
+                        <label for="dewalt">DEWALT</label></li>
+                    <li class="manufacturer-filters"><input type="checkbox" name="hitachi" id="hitachi">
+                        <label for="hitachi">HITACHI</label></li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Питание:</legend>
+                <ul>
+                    <li class="power-type"><input type="radio" name="power-type" value="battery" id="battery" checked>
+                        <label for="battery">АККУМУЛЯТОРНЫЕ</label></li>
+                    <li class="power-type"><input type="radio" name="power-type" value="electrical" id="electrical">
+                        <label for="electrical">СЕТЕВЫЕ</label></li>
+                </ul>
+            </fieldset>
 
             <button type="submit" class="filter-button button">ПОКАЗАТЬ</button>
         </form>
@@ -336,18 +340,20 @@
         </section>
 
     </footer>
-</body>
-
-<!--Модальное окно карзины-->
-<section class="modal-cart">
-    <h2>
-        Товар добавлен в корзину!
-    </h2>
-    <button class="button checkout" type="button">ОФОРМИТЬ ЗАКАЗ</button>
-    <button class="button continue-shopping" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-    <button class="modal-cart-close" type="button">
-        Закрыть
-    </button>
-</section>
+    <!--Модальное окно карзины-->
+    <section class="modal-cart">
+        <h2>
+            Товар добавлен в корзину!
+        </h2>
+        <div>
+            <button class="button checkout" type="button">ОФОРМИТЬ ЗАКАЗ</button>
+            <button class="button continue-shopping" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+            <button class="modal-close" type="button">
+                Закрыть
+            </button>
+        </div>
+    </section>
 
 </html>
+
+</body>
