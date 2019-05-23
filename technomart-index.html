@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -14,17 +14,16 @@
 
     <header class="main-header">
 
-        <div class="main-header-top">
-            <a class="main-header-logo"><img src="img/logo-text.png" width="110" height="18" alt="Логотип магазина техномарт">
-            </a>
-            <form action="#" method="post">
-                <input type="search" name="search" id="search">
-                <label for="search">Поиск:</label>
-            </form>
+        <a class="main-header-logo" href="technomart-index.html"><img src="img/logo-text.png" width="110" height="18" alt="Логотип магазина техномарт">
+        </a>
+        <form class="search" action="#" method="post">
+            <input type="search" name="search" id="search" placeholder="Поиск:">
+            <label class="visually-hidden" for="search">Поиск</label>
+        </form>
 
-            <a class="bookmarks" href="#">Закладки:0</a>
-            <a class="card" href="#">Корзина:0</a>
-            <a class="checkout" href="#">Оформить заказ</a>
+        <a class="bookmarks" href="#">Закладки: 0</a>
+        <a class="card" href="#">Корзина: 0</a>
+        <a class="checkout" href="#">Оформить заказ</a>
 
         </div>
 
@@ -83,7 +82,7 @@
                 <li>ЖелДорЭспедиция</li>
             </ul>
 
-            <a class="about-company-link" href="#">
+            <a class=" about-company-link" href="#">
         Подробнее о компании
       </a>
         </section>
@@ -95,12 +94,12 @@
             <p>
                 Вы можете забрать товар сами, <br> заехав в наш офис:
             </p>
-            <p>
+            <div>
                 <a class="сontacts-map" href="#"><img src="img/map-small.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная, 19"> </a>
                 <a class="contacts-feedback" href="#">
           Заблудились? Напишите нам!
         </a>
-            </p>
+            </div>
         </section>
     </main>
 
@@ -151,12 +150,12 @@
 
             <p class="footer-feedback">
                 Обратная связь:<br>
-                <span> mail@htmlacademy.ru</span>
+                <a href="#"> mail@htmlacademy.ru</a>
             </p>
             <p class="footer-copyrigeht">
                 Разработано &ndash;
                 <br>
-                <a class="footer-copyrigeht-link" href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a>
+                <a href="https://htmlacademy.ru/intensive/htmlcss"> htmlacademy.ru</a>
             </p>
         </div>
 
@@ -183,7 +182,7 @@
           <input type="text" name="text" value="" placeholder="В свободной форме">
         </label>
             </p>
-            <div>
+            <div class="feedback-form-bottom">
                 <button class="button" type="submit">Отправить</button>
             </div>
         </form>
