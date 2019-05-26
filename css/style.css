@@ -22,9 +22,6 @@ a {
 }
 
 
-/*
-
-
 /*body>*>*>* {
     background-color: rgba(27, 20, 23, 0.3)
 }*/
@@ -57,6 +54,7 @@ a {
 .main-header-top .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .main-header-top a {
@@ -64,15 +62,10 @@ a {
 }
 
 .main-header-logo {
-    text-align: center;
     width: 220px;
     height: 47px;
     background-color: #ee3643;
     box-shadow: inset 0px -5px #b52933;
-}
-
-.main-header-logo img {
-    vertical-align: bottom;
 }
 
 .main-header-logo:hover,
@@ -122,6 +115,9 @@ a {
 }
 
 .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
     height: 42px;
     background-color: #63a63e;
@@ -145,21 +141,29 @@ a {
 
 .header-bottom-wrapper {
     display: flex;
+    margin-bottom: 43px;
 }
 
-.main-header-bottom h1 {
+.header-bottom-wrapper h1 {
     width: 300px;
     color: #ee3643;
     font-size: 16px;
     line-height: 23px;
     font-style: italic;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 20px;
 }
 
 .main-header-contacts {
     width: 300px;
+    margin-right: 20px;
 }
 
 .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 270px;
     height: 45px;
     color: #ee3643;
@@ -167,16 +171,16 @@ a {
     line-height: 21px;
     text-align: center;
     border: 3px solid #ffffff;
-}
-
-.phone span {
-    vertical-align: middle;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .address {
     color: #32425c;
     font-size: 14px;
     line-height: 24px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .login-authentication,
@@ -192,12 +196,26 @@ a {
 }
 
 .login-authentication {
+    display: flex;
     width: 300px;
+}
+
+.login {
+    width: 121px;
+    height: 45px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.registration {
+    width: 150px;
+    height: 45px;
+    background-color: #ffffff;
 }
 
 .login-authentication a {
     color: #000000;
-    background-color: #ffffff;
     font-size: 21px;
     line-height: 21px;
 }
@@ -210,6 +228,21 @@ a {
 .login-authentication a:active {
     color: #000000;
     opacity: 0.3;
+}
+
+.user {
+    width: 300px;
+}
+
+.user-name {
+    width: 300px;
+    height: 45px;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+.user-data {
+    display: flex;
 }
 
 .user-name a {
@@ -233,8 +266,8 @@ a {
 
 .user-data a {
     color: #32425c;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 18px;
     text-decoration: underline;
 }
 
@@ -257,6 +290,9 @@ a {
 
 .site-navigation {
     display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 24px;
 }
 
 .site-navigation a {
@@ -276,6 +312,17 @@ a {
 
 .main-company {
     display: flex;
+    padding-top: 80px;
+    padding-bottom: 86px;
+}
+
+.about-company {
+    width: 540px;
+    margin-right: 100px;
+}
+
+.contacts {
+    width: 300px;
 }
 
 .about-company h2,
@@ -283,6 +330,7 @@ a {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .about-company p,
@@ -309,22 +357,53 @@ a {
 
 .footer-top {
     background-color: #32425c;
-    */ color: #f3f7f9;
+    color: #f3f7f9;
     font-size: 18px;
     line-height: 24px;
 }
 
 .footer-top .container {
     display: flex;
+    padding-bottom: 52px;
+}
+
+.footer-logo-address {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-right: 10px;
 }
 
 .footer-logo {
+    width: 220px;
+    height: 68px;
     background-color: #ee3643;
     box-shadow: inset 0px -5px #b52933;
 }
 
+.footer-address {
+    margin: 0px;
+    padding-top: 30px;
+}
+
+.footer-navigation {
+    width: 550px;
+}
+
+.footer-site-navigation {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 34px;
+    justify-content: space-between;
+}
+
 .footer-site-navigation a {
     color: #f3f7f9;
+}
+
+.footer-product {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-product a {
@@ -349,6 +428,20 @@ a {
 
 .footer-bottom .container {
     display: flex;
+    padding-top: 38px;
+    padding-bottom: 35px;
+}
+
+.company {
+    width: 320px;
+    margin-right: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-social {
+    width: 150px;
+    margin-right: 100px;
 }
 
 .company,
@@ -368,6 +461,19 @@ a {
 .social-button:focus,
 .social-button:active {
     background-color: #ee3643;
+}
+
+.footer-feedback {
+    width: 140px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-copyrigeht {
+    width: 140px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .footer-feedback a,
@@ -452,7 +558,12 @@ a {
 /*main каталога*/
 
 .breadcrumbs {
+    display: flex;
     list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+    margin-bottom: 21px;
 }
 
 .breadcrumbs a {
@@ -466,6 +577,9 @@ a {
 
 .perforatory {
     background-color: #f2f6f8;
+    padding-top: 28px;
+    padding-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .perforatory h2 {
@@ -473,10 +587,25 @@ a {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 30px;
+}
+
+.catalog-wrapper {
+    display: flex;
+}
+
+.catalog-filter {
+    width: 220px;
+    margin-right: 20px;
 }
 
 .filter-title {
     background-color: #f7f3ec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .filter-title h3 {
@@ -485,6 +614,8 @@ a {
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
 }
 
 .filter {
@@ -521,15 +652,51 @@ a {
 }
 
 
+/*сортировка*/
+
+.sorting {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f7f3ec;
+    margin-bottom: 20px;
+}
+
+.sorting h3 {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+}
+
+
 /*Карточки товаров*/
 
+.catalog {
+    width: 700px;
+}
+
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -20PX;
 }
 
 .catalog-item {
+    width: 220px;
     border: 1px solid #e5e5e5;
     text-align: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+    margin-right: 0px;
 }
 
 .catalog-item:hover {
@@ -603,60 +770,86 @@ a {
 }
 
 .pagination-list {
+    display: flex;
     list-style: none;
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
     text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 52px;
+    padding-bottom: 60px;
 }
 
-
-}
 .pagination-item a {
     color: #000000;
     background-color: #ffffff;
 }
+
 .pagination-item {
+    width: 38px;
+    height: 38px;
     border: 1px solid #d7dcde;
     text-align: center;
+    margin-right: 10px;
 }
+
+.pagination-item:last-child {
+    width: 140px;
+    height: 38px;
+}
+
 .pagination-item:hover,
 .pagination-item:focus {
     border: 1px solid #b5b5b5;
 }
+
 .pagination-item:active {
     border: 1px solid #ee3643;
 }
+
 .pagination-item-current {
     background-color: #ee3643;
     border: 1px solid #ee3643;
 }
+
 .pagination-item-current a {
     color: #ffffff;
     background-color: #ee3643;
 }
+
 .pagination-item-current:hover,
 .pagination-item-current:focus,
 .pagination-item-current:active {
     border: 1px solid #ee3643;
 }
+
 .about-perforator {
     background-color: #f2f6f8;
 }
+
 .about-perforator h2 {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
 }
+
 .about-perforator p {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
+    padding: 0px;
+    margin: 0px;
 }
 
+
 /*--Модальное окно карзины--*/
+
 .modal-cart {
     color: #000000;
     background-color: #ffffff;
@@ -664,10 +857,12 @@ a {
     line-height: 18px;
     border-top: 7px solid #ff5257;
 }
+
 .modal-cart h2 {
     font-size: 30px;
     line-height: 30px;
 }
+
 .modal-cart-bottom {
     background-color: #f1f1f1;
 }
