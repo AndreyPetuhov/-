@@ -31,8 +31,7 @@ img {
     background-color: rgba(27, 20, 23, 0.3)
 }*/
 
-
-/*.visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
@@ -45,7 +44,7 @@ input[type="radio"].visually-hidden {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}*/
+}
 
 .container {
     width: 960px;
@@ -62,7 +61,6 @@ input[type="radio"].visually-hidden {
 
 .main-header-top .container {
     display: flex;
-    position: relative;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -76,15 +74,10 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
-    position: absolute;
     width: 220px;
-    height: 47px;
+    height: 42px;
     background-color: #ee3643;
-    box-shadow: inset 0px -5px #b52933;
-}
-
-.main-header-logo img {
-    margin-top: 4px;
+    box-shadow: 0px 5px #b52933;
 }
 
 .main-header-logo:hover,
@@ -97,21 +90,8 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
-    width: 490px;
-    padding-left: 267px;
-}
-
-.search::before {
-    content: "";
-    position: absolute;
-    left: 248px;
-    top: 13px;
-    width: 17px;
-    height: 17px;
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    opacity: 0.3;
+    position: relative;
+    width: 270px;
 }
 
 .search:hover {
@@ -119,10 +99,12 @@ input[type="radio"].visually-hidden {
 }
 
 .search input[type="search"] {
+    position: relative;
     background-color: transparent;
     height: 42px;
     color: #ffffff;
     border: none;
+    padding-left: 49px;
 }
 
 .search input[type="search"]::-webkit-input-placeholder {
@@ -134,9 +116,24 @@ input[type="radio"].visually-hidden {
     /* Цвет подсказывающего текста */
 }
 
+.search svg {
+    position: absolute;
+    top: 11px;
+    left: 19px;
+}
+
+.search:hover path {
+    fill: #ffffff;
+}
+
 .search input[type="search"]:focus {
     background-color: #ffffff;
     color: #000000;
+}
+
+.search input[type="search"]:focus path {
+    background-color: #ffffff;
+    fill: #ee3643;
 }
 
 .bookmarks:hover,
@@ -237,6 +234,8 @@ input[type="radio"].visually-hidden {
     margin-bottom: 0;
     margin-top: 0;
     margin-right: 20px;
+    padding-left: 52px;
+    padding-top: 2px;
 }
 
 .main-header-contacts {
@@ -245,9 +244,7 @@ input[type="radio"].visually-hidden {
 }
 
 .phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     width: 270px;
     height: 45px;
     color: #ee3643;
@@ -257,6 +254,17 @@ input[type="radio"].visually-hidden {
     border: 3px solid #ffffff;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.phone::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    height: 15px;
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.3;
 }
 
 .address {
