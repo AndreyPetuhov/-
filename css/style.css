@@ -1054,6 +1054,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
     margin-bottom: 20px;
     margin-right: 20px;
+    min-height: 318px;
 }
 
 .catalog-item:nth-child(3n) {
@@ -1089,7 +1090,7 @@ input[type="radio"].visually-hidden {
     min-height: 40px;
     padding: 0 25px;
     margin-top: 8px;
-    margin-bottom: 13px;
+    margin-bottom: auto;
 }
 
 .catalog-item-image {
@@ -1104,7 +1105,6 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     color: #999999;
     text-decoration: line-through;
-    margin-bottom: 10px;
 }
 
 .catalog-item-new-price {
