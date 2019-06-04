@@ -1435,3 +1435,22 @@ input[type="radio"].visually-hidden {
 .modal-map p {
     margin: 0px;
 }
+
+.modal-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 0;
+    cursor: pointer;
+    border: none;
+}
+
+.modal-close::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
