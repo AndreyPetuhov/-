@@ -98,16 +98,7 @@
                     <form class="filter" method="get" action="#">
                         <fieldset class="filter-price">
                             <legend>Цена:</legend>
-                            <!--фильтр с ползунком
-            <div class="price-filter ">
-                <h4 class="price-filter-title ">ЦЕНА:</h4>
-                <input type="range " id="price-range " name="price-range " min="0 " max="3000 " step="1 ">
-            </div>
-            <div class="price-filter-output ">
-                <output name="output1 "></output>
-                <output name="output2 "></output>
-            </div>
-           -->
+
                             <div class="range-filter">
                                 <div class="range-controls">
                                     <div class="scale">
@@ -118,46 +109,47 @@
                                 </div>
                                 <div class="price-controls">
                                     <input name="min-price" type="text" value="0">
-                                    <input name="max-price" type="text" value="— 30000">
+                                    <input name="max-price" value="30000">
                                 </div>
                             </div>
                         </fieldset>
                         <fieldset>
                             <legend>Производители:</legend>
-                            <ul>
-                                <li class="manufacturer-filters ">
-                                    <input class="filer-input" type="checkbox" name="bosch" id="bosch" checked>
+                            <ul class="manufacturer">
+                                <li class="filter-option">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
                                     <label for="bosch">BOSCH</label>
                                 </li>
-                                <li class="manufacturer-filters">
-                                    <input class="filer-input" type="checkbox" name="interskol " id="interskol ">
+                                <li class="filter-option">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="interskol" id="interskol">
                                     <label for="interskol">Интерскол</label>
                                 </li>
-                                <li class="manufacturer-filters">
-                                    <input class="filer-input" type="checkbox" name="makita " id="makita " checked>
+                                <li class="filter-option">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="makita " id="makita " checked>
                                     <label for="makita ">MAKITA</label>
                                 </li>
-                                <li class="manufacturer-filters">
-                                    <input class="filer-input" type="checkbox" name="dewalt " id="dewalt ">
-                                    <label for="dewalt ">DEWALT</label>
+                                <li class="filter-option">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="dewalt">
+                                    <label for="dewalt">DEWALT</label>
                                 </li>
-                                <li class="manufacturer-filters">
-                                    <input class="filer-input" type="checkbox" name="hitachi " id="hitachi ">
-                                    <label for="hitachi ">HITACHI</label>
+                                <li class="filter-option">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="hitachi">
+                                    <label for="hitachi">HITACHI</label>
                                 </li>
+
                             </ul>
                         </fieldset>
                         <fieldset>
                             <legend>Питание:</legend>
-                            <ul>
-                                <li class="power-type "><input type="radio" name="power-type" value="battery" id="battery" checked>
-                                    <label for="battery ">Аккмуляторные</label></li>
-                                <li class="power-type"><input type="radio" name="power-type" value="electrical" id="electrical">
+                            <ul class="power">
+                                <li class="filter-option"><input class="filter-input filter-input-radio" type="radio" name="power-type" value="battery" id="battery" checked>
+                                    <label for="battery">Аккумуляторные</label></li>
+                                <li class="filter-option"><input class="filter-input filter-input-radio" type="radio" name="power-type" value="electrical" id="electrical">
                                     <label for="electrical">СЕТЕВЫЕ</label></li>
                             </ul>
                         </fieldset>
 
-                        <button type="submit " class="filter-button">Показать</button>
+                        <button type="submit" class="filter-button">Показать</button>
                     </form>
                 </div>
 
@@ -170,8 +162,7 @@
                     <ul class="catalog-list">
 
 
-                        <li class="catalog-item ">
-                            <!--<div class="flag flag-new">новинка</div>-->
+                        <li class="catalog-item">
                             <div class="good-btn">
                                 <a class="btn-bay" href="#">Купить</a>
                                 <button class="btn-mark">В закладки</button>
@@ -189,8 +180,8 @@
 
                         </li>
 
-                        <li class="catalog-item ">
-                            <!--<div class="flag flag-new">новинка</div>-->
+                        <li class="catalog-item">
+
                             <div class="good-btn">
                                 <a class="btn-bay" href="#">Купить</a>
                                 <button class="btn-mark">В закладки</button>
@@ -209,8 +200,7 @@
                         </li>
 
 
-                        <li class="catalog-item ">
-                            <div class="flag flag-new">новинка</div>
+                        <li class="catalog-item flag-new">
                             <div class="good-btn">
                                 <a class="btn-bay" href="#">Купить</a>
                                 <button class="btn-mark">В закладки</button>
@@ -229,7 +219,6 @@
                         </li>
 
                         <li class="catalog-item ">
-                            <!--<div class="flag flag-new">новинка</div>-->
                             <div class="good-btn">
                                 <a class="btn-bay" href="#">Купить</a>
                                 <button class="btn-mark">В закладки</button>
@@ -247,8 +236,8 @@
 
                         </li>
 
-                        <li class="catalog-item ">
-                            <div class="flag flag-new">новинка</div>
+                        <li class="catalog-item flag-new">
+
                             <div class="good-btn">
                                 <a class="btn-bay" href="#">Купить</a>
                                 <button class="btn-mark">В закладки</button>
@@ -267,7 +256,7 @@
                         </li>
 
                         <li class="catalog-item ">
-                            <!--<div class="flag flag-new">новинка</div>-->
+
                             <div class="good-btn">
                                 <a class="btn-bay" href="#">Купить</a>
                                 <button class="btn-mark">В закладки</button>
@@ -285,8 +274,8 @@
 
                         </li>
 
-                        <li class="catalog-item ">
-                            <div class="flag flag-new">новинка</div>
+                        <li class="catalog-item flag-new">
+
                             <div class="good-btn">
                                 <a class="btn-bay" href="#">Купить</a>
                                 <button class="btn-mark">В закладки</button>
@@ -304,7 +293,7 @@
 
                         </li>
                         <li class="catalog-item ">
-                            <!--<div class="flag flag-new">новинка</div>-->
+
                             <div class="good-btn">
                                 <a class="btn-bay" href="#">Купить</a>
                                 <button class="btn-mark">В закладки</button>
@@ -321,7 +310,7 @@
                             </div>
 
                             <li class="catalog-item ">
-                                <!--<div class="flag flag-new">новинка</div>-->
+
                                 <div class="good-btn">
                                     <a class="btn-bay" href="#">Купить</a>
                                     <button class="btn-mark">В закладки</button>

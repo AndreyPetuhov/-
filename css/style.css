@@ -592,7 +592,7 @@ input[type="radio"].visually-hidden {
 
 .footer-top .container {
     display: flex;
-    padding-bottom: 50px;
+    padding-bottom: 48px;
 }
 
 .footer-logo-address {
@@ -802,13 +802,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-/*--Попап карты--*/
-
-.modal-map p {
-    box-shadow: 0px 0px 16px 0px rgba(47, 42, 43, 0.5)
-}
-
-
 /*main каталога*/
 
 .breadcrumbs {
@@ -924,10 +917,6 @@ input[type="radio"].visually-hidden {
     margin: 0px;
 }
 
-.filter ul {
-    list-style: none;
-}
-
 .filter legend {
     font-weight: 700;
     font-size: 17px;
@@ -939,7 +928,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     height: 80px;
     background-color: #f7f3ec;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     border-radius: 3px;
     padding-top: 39px;
     padding-left: 20px;
@@ -979,23 +968,113 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    font-size: 0px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 16px;
 }
 
 .price-controls input {
-    display: inline-block;
     width: 95px;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 17px;
+    line-height: 18px;
     text-transform: uppercase;
     color: #000000;
-    padding: 8px 10px;
+    padding-top: 8px;
+    padding-bottom: 12px;
     text-align: center;
     border: none;
     background-color: #f7f3ec;
+}
+
+.price-controls::before {
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    left: 105px;
+    top: 18px;
+    background-color: #000000;
+    content: "";
+}
+
+.filter-input {
+    display: none;
+}
+
+.filter-option label {
+    position: relative;
+    cursor: pointer;
+}
+
+.manufacturer {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 17px;
+}
+
+.filter-input-checkbox+label::before {
+    position: absolute;
+    left: -35px;
+    top: 0px;
+    content: "";
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.6;
+}
+
+.filter-input-checkbox+label:hover::before {
+    opacity: 1;
+}
+
+.filter-input-checkbox:checked~label::before {
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.power {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    margin-bottom: 78px;
+}
+
+.filter-input-radio+label::before {
+    position: absolute;
+    left: -36px;
+    top: -3px;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/radio-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.6;
+}
+
+.filter-input-radio+label:hover::before {
+    opacity: 1;
+}
+
+.filter-input-radio:checked~label::before {
+    background-image: url("../img/radio-on.svg");
+}
+
+.filter-input:disabled+label,
+.filter-input:disabled+label::before {
+    opacity: 0.4;
+}
+
+.filter-option {
+    margin-bottom: 20px;
+    padding-left: 35px;
 }
 
 .filter-button {
@@ -1004,8 +1083,20 @@ input[type="radio"].visually-hidden {
     font-size: 13px;
     line-height: 18px;
     color: #000000;
-    border: 1px solid #c5c5c5;
+    width: 140px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border: 1px solid #e5e5e5;
     background-color: #ffffff;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    border: 1px solid #b5b5b5;
+}
+
+.filter-button:active {
+    border: 1px solid #ee3643;
 }
 
 
@@ -1066,7 +1157,7 @@ input[type="radio"].visually-hidden {
     box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
-.catalog-item .flag {
+.flag-new::before {
     position: absolute;
     content: "";
     width: 60px;
@@ -1076,9 +1167,6 @@ input[type="radio"].visually-hidden {
     text-indent: -1000px;
     overflow: hidden;
     z-index: 20;
-}
-
-.catalog-item .flag-new {
     background: url("../img/new\ flag.png") no-repeat 0 0;
 }
 
@@ -1145,6 +1233,10 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover .good-btn {
     display: block;
+}
+
+.catalog-item:hover .catalog-item-image {
+    visibility: hidden;
 }
 
 .btn-bay {
@@ -1282,7 +1374,7 @@ input[type="radio"].visually-hidden {
 .about-perforator {
     background-color: #f2f6f8;
     padding-top: 65px;
-    padding-bottom: 70px;
+    padding-bottom: 69px;
 }
 
 .about-perforator h2 {
@@ -1321,4 +1413,25 @@ input[type="radio"].visually-hidden {
 
 .modal-cart-bottom {
     background-color: #f1f1f1;
+}
+
+
+/*--Попап карты--*/
+
+.modal {
+    position: fixed;
+    box-shadow: 0px 0px 16px 0px rgba(47, 42, 43, 0.5);
+}
+
+.modal-map {
+    width: 940px;
+    height: 446px;
+    top: 50%;
+    left: 50%;
+    margin-left: -470px;
+    margin-top: -223PX;
+}
+
+.modal-map p {
+    margin: 0px;
 }
