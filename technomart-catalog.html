@@ -157,7 +157,14 @@
                 <section class="catalog ">
                     <div class="sorting">
                         <h3>Сортировка:</h3>
-                        <!--Здесь будет блок сортировки-->
+                        <ul class="sorting-list">
+                            <li><a class="sorting-price" href="#">По цене</a></li>
+                            <li><a class="sorting-type" href="#">По типу</a></li>
+                            <li><a class="sorting-function" href="#">По функционалу</a></li>
+                            <li><a class="sorting-up" href="#"><span class="visually-hidden" >Сортировка по возрастанию</span></a></li>
+                            <li><a class="sorting-down" href="#"><span class="visually-hidden" >Сортировка по убыванию</span></a></li>
+
+                        </ul>
                     </div>
                     <ul class="catalog-list">
 
@@ -411,50 +418,26 @@
         </div>
 
     </footer>
-    <!--Модальное окно "- Заблудились? Напишите нам!-->
-    <section class="modal-feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <form class="feedback-form" action="#" method="post">
-            <p class="feedback-item">
-                <label>
-          Ваше имя: <br>
-          <input type="text" name="name" value="" placeholder="Имя Фамилия">
-        </label>
-            </p>
-            <p class="feedback-item">
-                <label>
-          Ваше e-mail: <br>
-          <input type="text" name="e-mail" value="" placeholder="email@example.com">
-        </label>
-            </p>
-            <p class="feedback-item">
-                <label>
-          Текст письма: <br>
-          <input type="text" name="text" value="" placeholder="В свободной форме">
-        </label>
-            </p>
-            <div class="feedback-form-bottom">
-                <button class="button" type="submit">Отправить</button>
+
+
+    <!--Модальное окно "Товар добавлен вкорзину-->
+    <section class="modal-cart modal">
+        <div class="modal-cart-container">
+            <h2>Товар добавлен в корзину!</h2>
+        </div>
+
+        <div class="modal-cart-bottom">
+            <div class="modal-cart-container">
+                <a class="button" href="#"> оформить заказ </a>
+                <a class="continue" href="#">Продолжить покупки</a>
+
             </div>
-        </form>
+        </div>
         <button class="modal-close" type="button">
-        Закрыть
-      </button>
-
+                Закрыть
+              </button>
     </section>
 
-    <!--Попап карты-->
-    <section class="modal-map">
-        <h2 class="visually-hidden">
-            Как до нас добраться
-        </h2>
-        <p>
-            <img src="img/map-big.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная, 19">
-        </p>
-        <button class="modal-close" type="button">
-      Закрыть
-    </button>
-    </section>
 
 </body>
 

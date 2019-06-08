@@ -180,47 +180,62 @@
         </div>
 
     </footer>
+
+
     <!--Модальное окно "- Заблудились? Напишите нам!-->
-    <section class="modal-feedback">
+    <section class="modal-feedback modal">
+
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="feedback-form" action="#" method="post">
-            <p class="feedback-item">
-                <label>
-          Ваше имя: <br>
-          <input type="text" name="name" value="" placeholder="Имя Фамилия">
-        </label>
-            </p>
-            <p class="feedback-item">
-                <label>
-          Ваше e-mail: <br>
-          <input type="text" name="e-mail" value="" placeholder="email@example.com">
-        </label>
-            </p>
-            <p class="feedback-item">
-                <label>
-          Текст письма: <br>
-          <input type="text" name="text" value="" placeholder="В свободной форме">
-        </label>
-            </p>
-            <div class="feedback-form-bottom">
-                <button class="button" type="submit">Отправить</button>
+            <div class="modal-feedback-container">
+                <p class="feedback-item">
+                    <label for="name">
+          Ваше имя: </label>
+                    <input type="text" name="name" id="name" value="" placeholder="Имя Фамилия">
+
+                </p>
+
+                <p class="feedback-item">
+                    <label for="e-mail">
+          Ваш e-mail: </label>
+                    <input type="email" name="e-mail" id="e-mail" value="" placeholder="email@example.com">
+
+                </p>
+                <!-- <p class="feedback-item">
+                    <label for="text">
+          Текст письма: </label>
+                    <input type="text" name="text" id="text" value="" placeholder="В свободной форме">
+
+                </p> -->
+
+                <p class="feedback-item">
+                    <label for="text">
+                               Текст письма: </label>
+                    <textarea name=" text " id="text " rows="5" " cols="65 " placeholder="В свободной форме "></textarea>
+                </p>
+            </div>
+            <div class="feedback-form-bottom ">
+                <div class="modal-feedback-container ">
+                    <button class="button button-feedback " type="submit ">Отправить</button>
+                </div>
             </div>
         </form>
-        <button class="modal-close" type="button">
+        <button class="modal-close " type="button ">
         Закрыть
       </button>
+
 
     </section>
 
     <!--Попап карты-->
-    <section class="modal modal-map">
-        <h2 class="visually-hidden">
+    <section class="modal modal-map ">
+        <h2 class="visually-hidden ">
             Как до нас добраться
         </h2>
         <p>
-            <img src="img/map-big.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная, 19">
+            <img src="img/map-big.jpg " width="940 " height="446 " alt="Офис компании по адресу ул. Большая Конюшенная, 19 ">
         </p>
-        <button class="modal-close" type="button">
+        <button class="modal-close " type="button ">
       Закрыть
     </button>
     </section>
