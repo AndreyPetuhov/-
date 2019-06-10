@@ -821,14 +821,8 @@
                 display: none;
             }
             
-            #btn-1:checked~#slide-2-1 {
-                display: block;
-            }
-            
-            #btn-2:checked~#slide-2-2 {
-                display: block;
-            }
-            
+            #btn-1:checked~#slide-2-1,
+            #btn-2:checked~#slide-2-2,
             #btn-3:checked~#slide-2-3 {
                 display: block;
             }
