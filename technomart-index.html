@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <meta name="format-detection" content="telephone=no">
 </head>
 
 <body>
@@ -321,10 +322,10 @@
                     <p>
                         Вы можете забрать товар сами, <br> заехав в наш офис:
                     </p>
-                    <div class="сontacts-map ">
+                    <div class="сontacts-map">
                         <a><img src="img/map-small.jpg" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная, 19 ">
                             <br></a>
-                        <a class="button contacts-feedback " href="# ">
+                        <a class="button contacts-feedback" href="# ">
           Заблудились? Напишите нам!
         </a>
                     </div>
@@ -447,6 +448,21 @@
       Закрыть
     </button>
     </section>
+    <script>
+        var linkFeedback = document.querySelector(".contacts-feedback");
+        var popupFeedback = document.querySelector(".modal-feedback");
+        var closeFeedback = popupFeedback.querySelector(".modal-close");
+
+        linkFeedback.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popupFeedback.classList.add("modal-feedback-show");
+        });
+        closeFeedback.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popupFeedback.classList.remove("modal-feedback-show");
+
+        });
+    </script>
 
 </body>
 
