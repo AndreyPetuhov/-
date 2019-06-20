@@ -1,20 +1,23 @@
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *,
  ::before,
 *::after {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-weight: 400;
     color: #000000;
     background-color: #ffffff;
+    overflow-X: hidden;
 }
 
 a {
@@ -36,6 +39,7 @@ input[type="radio"].visually-hidden {
     border: 0;
     padding: 0;
     white-space: nowrap;
+    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -55,8 +59,13 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-top .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -72,6 +81,7 @@ input[type="radio"].visually-hidden {
     width: 220px;
     height: 42px;
     background-color: #ee3643;
+    -webkit-box-shadow: 0px 5px #b52933;
     box-shadow: 0px 5px #b52933;
 }
 
@@ -105,7 +115,7 @@ input[type="radio"].visually-hidden {
 
 .search input[type="search"]::-webkit-input-placeholder {
     color: #ffffff;
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: "Cuprum", "Arial", sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 18px;
@@ -220,8 +230,12 @@ input[type="radio"].visually-hidden {
 }
 
 .header-bottom-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 39px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -294,8 +308,12 @@ input[type="radio"].visually-hidden {
 }
 
 .login-authentication {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 300px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-left: 18px;
 }
@@ -356,10 +374,14 @@ input[type="radio"].visually-hidden {
 }
 
 .user-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 300px;
     background-color: #ffffff;
     margin: 0px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 7px;
 }
@@ -411,6 +433,8 @@ input[type="radio"].visually-hidden {
 }
 
 .user-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: 18px;
 }
@@ -453,14 +477,20 @@ input[type="radio"].visually-hidden {
     background-color: #32425c;
     font-size: 17px;
     line-height: 17px;
+    -webkit-box-shadow: inset 0px -5px #293449;
     box-shadow: inset 0px -5px #293449;
 }
 
 .site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 22px;
     padding-right: 22px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -469,6 +499,7 @@ input[type="radio"].visually-hidden {
     padding: 20px 30px 23px;
     color: #ffffff;
     background-color: #32425c;
+    -webkit-box-shadow: inset 0px -5px #293449;
     box-shadow: inset 0px -5px #293449;
 }
 
@@ -501,8 +532,13 @@ input[type="radio"].visually-hidden {
 
 .assortment ul {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0px;
     margin: 0px;
@@ -592,6 +628,8 @@ input[type="radio"].visually-hidden {
 /*Слайдер-1 с 2 банерами*/
 
 .promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 53px;
 }
@@ -728,8 +766,13 @@ input[type="radio"].visually-hidden {
 /*Популярные товары*/
 
 .popular-goods-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #f9f5f0;
     padding-top: 28px;
@@ -755,8 +798,13 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-goods-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     list-style: none;
     padding: 0px;
@@ -771,8 +819,13 @@ input[type="radio"].visually-hidden {
 /*популярные производители*/
 
 .popular-manufacturers-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #f9f5f0;
     padding-top: 28px;
@@ -798,8 +851,13 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-manufacturers-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     list-style: none;
     padding: 0px;
@@ -808,8 +866,14 @@ input[type="radio"].visually-hidden {
 }
 
 .manufacturer-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 220px;
     min-height: 145px;
@@ -837,6 +901,8 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -946,9 +1012,13 @@ input[type="radio"].visually-hidden {
 /*О компании*/
 
 .main-company {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 80px;
     padding-bottom: 86px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0px;
     margin-bottom: 86px;
@@ -976,7 +1046,7 @@ input[type="radio"].visually-hidden {
 .services p,
 .about-company p,
 .сontacts p {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
@@ -1063,6 +1133,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-top .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-bottom: 48px;
 }
@@ -1076,6 +1148,7 @@ input[type="radio"].visually-hidden {
     width: 220px;
     height: 68px;
     background-color: #ee3643;
+    -webkit-box-shadow: inset 0px -5px #b52933;
     box-shadow: inset 0px -5px #b52933;
     text-align: center;
     padding-top: 19px;
@@ -1101,11 +1174,16 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-site-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 38px;
     padding-bottom: 34px;
     padding-left: 2px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -1114,8 +1192,13 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-left: 25px;
 }
@@ -1141,6 +1224,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-bottom .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 38px;
     padding-bottom: 35px;
@@ -1154,7 +1239,10 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -1242,8 +1330,13 @@ input[type="radio"].visually-hidden {
 /*main каталога*/
 
 .breadcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
     margin: 0px;
@@ -1253,7 +1346,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs a {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -1271,7 +1364,10 @@ input[type="radio"].visually-hidden {
     position: absolute;
     width: 8px;
     height: 8px;
+    -webkit-box-shadow: 1px 1px #c1c6ce;
     box-shadow: 1px 1px #c1c6ce;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top: 5px;
     right: -22px;
@@ -1312,6 +1408,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -1330,7 +1428,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-title h3 {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -1340,7 +1438,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
@@ -1391,6 +1489,7 @@ input[type="radio"].visually-hidden {
     height: 20px;
     border: 8px solid #ffffff;
     background-color: #ababab;
+    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
     box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
     cursor: pointer;
@@ -1406,7 +1505,11 @@ input[type="radio"].visually-hidden {
 
 .price-controls {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding-bottom: 25px;
     border-bottom: 1px solid #e5e5e5;
@@ -1540,6 +1643,8 @@ input[type="radio"].visually-hidden {
 /*сортировка*/
 
 .sorting {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 9px;
     padding-bottom: 11px;
@@ -1553,7 +1658,7 @@ input[type="radio"].visually-hidden {
     margin: 0px;
     margin-right: 140px;
     margin-left: 19px;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -1561,16 +1666,21 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .sorting-list a {
     color: rgba(17, 17, 17, 0.3);
     text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
     text-decoration-style: dotted;
+    -webkit-text-decoration-color: #ee3643;
     text-decoration-color: #ee3643;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -1580,6 +1690,7 @@ input[type="radio"].visually-hidden {
 .sorting-list a:hover,
 .sorting-list a:focus {
     color: #000000;
+    -webkit-text-decoration-style: solid;
     text-decoration-style: solid;
 }
 
@@ -1660,7 +1771,10 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
@@ -1669,7 +1783,12 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
     width: 220px;
@@ -1686,6 +1805,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item:hover,
 .catalog-item:focus {
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
     box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
@@ -1703,7 +1823,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item h3 {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
@@ -1719,7 +1839,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-old-price {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
@@ -1729,7 +1849,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-new-price {
     position: relative;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
     font-size: 17px;
     line-height: 18px;
@@ -1846,9 +1966,11 @@ input[type="radio"].visually-hidden {
 /*Пагинатор*/
 
 .pagination-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -1920,7 +2042,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-perforator p {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
@@ -1945,10 +2067,15 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-cart-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 460px;
     margin: 0 auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -2012,6 +2139,7 @@ input[type="radio"].visually-hidden {
 
 .modal {
     position: fixed;
+    -webkit-box-shadow: 0px 0px 16px 8px rgba(47, 42, 43, 0.5);
     box-shadow: 0px 0px 16px 8px rgba(47, 42, 43, 0.5);
     z-index: 100;
 }
@@ -2089,15 +2217,20 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 460px;
     margin: 0 auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .feedback-item input {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -2127,7 +2260,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-item textarea {
-    font-family: "PT Sans", Arial, sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 18px;
@@ -2145,31 +2278,57 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
     display: block;
+    -webkit-animation: bounce 0.6s;
     animation: bounce 0.6s;
 }
 
 .modal-feedback-error {
+    -webkit-animation: shake 0.6s;
     animation: shake 0.6s;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0% {
+        -webkit-transform: translateY(-2000px);
         transform: translateY(-2000px);
     }
     70% {
+        -webkit-transform: translateY(30px);
         transform: translateY(30px);
     }
     90% {
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
     100% {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 }
 
-@keyframes shake {
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes shake {
     0%,
     100% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
     10%,
@@ -2177,12 +2336,37 @@ input[type="radio"].visually-hidden {
     50%,
     70%,
     90% {
+        -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
     }
     20%,
     40%,
     60%,
     80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
         transform: translateX(10px);
     }
 }
