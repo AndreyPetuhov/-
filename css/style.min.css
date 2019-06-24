@@ -1016,7 +1016,12 @@ input[type=radio].visually-hidden {
 
 .slider-2-item {
     display: block;
-    width: 620px
+    max-width: 380px
+}
+
+.services-text {
+    position: relative;
+    z-index: 10
 }
 
 .slider-2-item h3 {
@@ -2261,3 +2266,5 @@ input[type=radio].visually-hidden {
     -webkit-animation: shake .6s;
     animation: shake .6s
 }
+
+Show transformations result Original : 43371 bytes Compressed: 30597 bytes (70.55%) Saving : 12774 bytes (29.45%) Time : 163 ms Powered by CSSO 3.5.1

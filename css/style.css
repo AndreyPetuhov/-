@@ -919,7 +919,6 @@ input[type="radio"].visually-hidden {
 
 .services {
     background-color: #f4f8f9;
-    /* min-height: 522px; */
     margin-bottom: 80px;
 }
 
@@ -991,7 +990,12 @@ input[type="radio"].visually-hidden {
 
 .slider-2-item {
     display: block;
-    width: 620px;
+    max-width: 380px;
+}
+
+.services-text {
+    position: relative;
+    z-index: 10;
 }
 
 .slider-2-item h3 {
